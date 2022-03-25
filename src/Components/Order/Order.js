@@ -9,7 +9,7 @@ const Order = (props) => {
         <div className='itemList'>
             <h1>Order List</h1>
 
-            <div >
+            <div id='order' >
                 <ul >
                     {
                         addSet.map(single =>

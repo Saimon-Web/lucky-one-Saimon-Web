@@ -19,6 +19,22 @@
 .order-box h1{
     text-align: center;
 }
+.order-scroll{
+    background-color: orange;
+    padding:10px 10px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.order-scroll:hover{
+    background-color: blue;
+    color:white;
+}
+.shop .order-scroll{
+    display: none;
+}
 
 @media only screen and (max-width:688px){
     .shop{
@@ -29,6 +45,9 @@
     .shop-box{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-
+    }
+    .shop .order-scroll{
+        display: block;
+        margin-bottom: 50px;
     }
 }

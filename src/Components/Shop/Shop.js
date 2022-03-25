@@ -39,6 +39,7 @@ const Shop = () => {
 
     return (
         <div className='shop'>
+            <a className='order-scroll' href="#order">See order list</a>
             <div className='shop-box'>
                 {
                     headphones.map(headset => <Singleset
