@@ -19,3 +19,16 @@
 .order-box h1{
     text-align: center;
 }
+
+@media only screen and (max-width:688px){
+    .shop{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .shop-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
