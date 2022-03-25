@@ -14,13 +14,22 @@ const Shop = () => {
     }, [])
 
     const oneHandler = () => {
+
         const newOne = addSet[Math.floor(Math.random() * addSet.length)];
-        setoneSet(newOne);
-        setaddSet([]);
+
+        if (newOne) {
+            setoneSet(newOne);
+            setaddSet([]);
+        }
+        else {
+            return;
+        }
+
 
     }
     const removeHandler = () => {
         setaddSet([]);
+        setoneSet([]);
     }
     //button click handler function
     const eventHandler = (headset) => {

@@ -18,7 +18,7 @@ const Order = (props) => {
                             </li>)
                     }
                 </ul>
-                <p>{oneSet.name}</p>
+                <h3 className='choose'>Choosen One:{oneSet.name}</h3>
 
                 <div className='button'>
                     <button onClick={props.oneHandler} className='order-button'>CHOOSE 1 FOR ME</button> <br />
