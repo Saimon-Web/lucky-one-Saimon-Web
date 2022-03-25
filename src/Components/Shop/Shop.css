@@ -1,0 +1,21 @@
+.shop {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+  
+}
+
+.shop-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding-left: 20px;
+}
+
+.order-box{
+    margin-left: 20px;
+   
+}
+
+.order-box h1{
+    text-align: center;
+}

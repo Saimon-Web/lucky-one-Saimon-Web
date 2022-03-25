@@ -1,0 +1,28 @@
+
+.singleSet{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   text-align: center;
+  padding-top: 20px;
+  
+   border-radius: 20px;
+   
+}
+.single-info{
+    
+    border-top: 1px solid rgb(216, 211, 211);
+}
+.btn{
+    width: 100%;
+    bottom: 0;
+   border: none;
+   padding: 15px 0px;
+   background-color: blue;
+   color: white;
+   font-size: 17px;
+   font-weight: 400;
+   border-radius: 0 0 20px 20px;
+}
+.btn:hover{
+    background-color: orange;
+    color: black;
+}

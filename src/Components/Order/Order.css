@@ -1,0 +1,41 @@
+.itemList{
+    position: sticky;
+    top:0;
+    background-color: orange;
+    height: auto;
+    text-align: center;
+}
+.list img{
+    width: 80px;
+    height: 40x;
+    margin-right: 10px;
+    
+   
+ }
+ .list{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     padding-bottom: 20px;
+     
+ }
+ .list h4{
+     color: blue;
+     font-size: 20px;
+ }
+ .order-button{
+     background-color: blue;
+     color: white;
+     font-size: 20px;
+     padding: 10px 0px;
+     border: none;
+     margin-top: 20px;
+     width: 100%;
+ }
+ .order-button:hover{
+     background-color:rgb(18, 18, 43)
+
+ }
+ .button{
+     margin-top: 30px;
+ }
