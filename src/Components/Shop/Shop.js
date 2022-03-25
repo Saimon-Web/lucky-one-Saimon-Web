@@ -6,13 +6,22 @@ import './Shop.css';
 const Shop = () => {
     const [headphones, setHeadphones] = useState([]);
     const [addSet, setaddSet] = useState([]);
+    const [oneSet, setoneSet] = useState([])
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setHeadphones(data))
     }, [])
 
+    const oneHandler = () => {
+        const newOne = addSet[Math.floor(Math.random() * addSet.length)];
+        setoneSet(newOne);
+        setaddSet([]);
 
+    }
+    const removeHandler = () => {
+        setaddSet([]);
+    }
     //button click handler function
     const eventHandler = (headset) => {
         const newSet = [...addSet, headset];
@@ -32,7 +41,11 @@ const Shop = () => {
             </div>
 
             <div className="order-box">
-                <Order addSet={addSet}></Order>
+                <Order
+                    oneHandler={oneHandler}
+                    oneSet={oneSet}
+                    removeHandler={removeHandler}
+                    addSet={addSet}></Order>
             </div>
 
         </div>

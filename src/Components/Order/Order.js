@@ -3,6 +3,8 @@ import './Order.css'
 
 const Order = (props) => {
     const { addSet } = props;
+    const { oneSet } = props;
+
     return (
         <div className='itemList'>
             <h1>Order List</h1>
@@ -10,16 +12,21 @@ const Order = (props) => {
             <div >
                 <ul >
                     {
-                        addSet.map(single => <li className='list'><img src={single.img} alt="" /> <h4>{single.name}</h4></li>)
+                        addSet.map(single =>
+                            <li className='list'><img src={single.img} alt="" />
+                                <h4>{single.name}</h4>
+                            </li>)
                     }
                 </ul>
+                <p>{oneSet.name}</p>
+
                 <div className='button'>
-                    <button className='order-button'>CHOOSE 1 FOR ME</button> <br />
-                    <button className='order-button'>Remove</button>
+                    <button onClick={props.oneHandler} className='order-button'>CHOOSE 1 FOR ME</button> <br />
+                    <button onClick={props.removeHandler} className='order-button'>Remove</button>
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 };
 
