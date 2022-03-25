@@ -39,4 +39,17 @@
  .button{
      margin-top: 30px;
  }
- 
+ .choose{
+     display: flex;
+     align-items: center;  
+     margin-left: 30px;
+ }
+ .choose img{
+    width: 80px;
+    height: 40x;
+    margin-left: 10px;
+    
+ }
+ .choose h4{
+     margin-left: 10px;
+ }

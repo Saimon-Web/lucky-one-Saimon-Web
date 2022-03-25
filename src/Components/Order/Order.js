@@ -18,7 +18,7 @@ const Order = (props) => {
                             </li>)
                     }
                 </ul>
-                <h3 className='choose'>Choosen One:{oneSet.name}</h3>
+                <h3 className='choose'><img src={oneSet.img} alt="" /> <h4>{oneSet.name}</h4></h3>
 
                 <div className='button'>
                     <button onClick={props.oneHandler} className='order-button'>CHOOSE 1 FOR ME</button> <br />
